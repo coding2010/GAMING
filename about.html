@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.html">
+</head>
+<style>
+    .menu1 {
+        background-color: rgba(255, 255, 255, 0.3);
+        color: black;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 40px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300;1,900&display=swap');
+
+    * {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .menu1 a {
+        text-decoration: none;
+        color: black;
+    }
+
+
+
+    .menu1 a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .menu1 a:hover {
+        color: white;
+    }
+
+    body,
+    html {
+        background-color: rgb(5, 18, 37)
+    }
+
+    .h {
+        color: white;
+        text-align: center;
+        padding: 1.5em;
+        animation-name: textAnimation;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+
+    }
+
+    .d1 {
+        height: 90vh;
+        background-image: url(https://greatloveart.com/wp-content/uploads/2021/02/Cool-Gaming-HD-images-backgrounds.jpg);
+        margin: 7em;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: 2em;
+    }
+
+    @keyframes textAnimation {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+
+        from {
+            transform: translateY(30px);
+        }
+
+        to {
+            transform: translateY(0px);
+        }
+    }
+
+    @media all and (max-width:991px) {
+        .menu1 {
+            display: block;
+            text-align: center;
+        }
+
+        .menu1 a {
+            display: block;
+        }
+
+        .d1 {
+            margin: 0em;
+            margin-top: 0em;
+            height: 70vh;
+            object-fit: cover;
+        }
+    }
+
+    .col a {
+        background-image: url();
+    }
+
+    .col:hver {
+        background-color: white;
+        background-image: none;
+    }
+
+    .text {
+        text-align: center;
+        color: white;
+        padding: 30px;
+    }
+    .fab{
+        border: 2px solid white;
+        border-radius: 50%;
+        padding: 1em;
+        margin: 1em;
+    }
+</style>
+
+<body>
+    <header class="menu1">
+        <h2 class="logo"> Minecraft <i class="fas fa-gamepad"></i></h2>
+        <a href="index.html">Home</a>
+        <a href="about.html">Battle</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </header>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.teahub.io/photos/full/3-32060_4k-video-game-wallpapers-micro-dump-video-games.jpg
+            " class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>I'm not a player. I'm a gamer</h5>
+                    <p>Games don't make you violent, lag does.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.teahub.io/photos/full/97-970281_here-are-some-epic-gaming-wallpapers-p-gaming.jpg
+            " class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Failure doesn't mean the game is over, it means try again with experience.</h5>
+                    <p>I'm the hero of a thousand stories.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.teahub.io/photos/full/27-271578_video-game-wallpapers-gaming-epic-wallpaper-hd.jpg
+            " class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>I don't need to get a life</h5>
+                    <p>Home is where you are 'Player 1'.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        <h1 class="h">The Best Games On The Internet</h1>
+    </div>
+    <div class="d1"></div>
+    <h1 class="text">Best gaming controllers</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <img src="https://images.pexels.com/photos/6962206/pexels-photo-6962206.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    width="100%">
+
+            </div>
+            <div class="col-lg"><img
+                    src="https://images.pexels.com/photos/6962206/pexels-photo-6962206.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    width="100%">
+            </div>
+            <div class="col-lg"><img
+                    src="https://images.pexels.com/photos/6962206/pexels-photo-6962206.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    width="100%">
+            </div>
+            <div class="col-lg"><img
+                    src="https://images.pexels.com/photos/6962206/pexels-photo-6962206.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    width="100%">
+            </div>
+        </div>
+    </div>
+    <h1 class="text">OUR PC'S</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg bg-dark text-light border">
+                <h1>OUR PC'S</h1>
+            </div>
+            <div class="col-lg p-3 border"><img
+                    src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="" width="100%"></div>
+            <div class="col-lg p-3 border"><img
+                    src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="" width="100%"></div>
+            <div class="col-lg p-3 border"><img
+                    src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="" width="100%"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg p-3 border"><img
+                    src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="" width="100%"></div>
+            <div class="col-lg p-3 border"><img
+                    src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="" width="100%"></div>
+            <div class="col-lg p-3 border"><img
+                    src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="" width="100%"></div>
+            <div class="col-lg bg-warning p-3 border">
+                <h2>GAMING </h2>
+                <p>
+                  GAMING IS FUN
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-md text-light">
+                <h2>Location</h2> <br>
+                <p> Some where in India DFFSC SDFS </p>
+            </div>
+            <div class="col-md text-light">
+                <h1>AROUND THE WEB</h1>
+                <span><i class="fab fa-instagram-square"></i></span>
+                <span><i class="fab fa-facebook-square"></i></span>
+                <span><i class="fab fa-twitter"></i></span>
+                <span><i class="fab fa-amazon"></i></span>
+            </div>
+            <div class="col-md text-light">
+                <h1>ABOUT</h1> <br>
+                <p>This is a sample page created to tell you about gaming </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
